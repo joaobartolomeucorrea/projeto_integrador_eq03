@@ -1,0 +1,227 @@
+
+/* ==========================================
+   ACOLHE+ - CHAT CENTRALIZADO NA PÁGINA
+========================================== */
+
+/* REMOVE O BOTÃO DE ABRIR */
+
+#abrir-assistente {
+    display: none !important;
+}
+
+/* MOLDURA PRINCIPAL DO CHAT */
+
+#painel-assistente {
+    position: relative;
+
+    display: flex !important;
+    flex-direction: column;
+
+    width: 500px;
+    max-width: 95%;
+
+    height: 650px;
+    max-height: 85vh;
+
+    margin: 35px auto;
+
+    background: #ffffff;
+
+    border: 3px solid #fbc02d;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+/* CABEÇALHO E ABA DO MENU */
+
+#painel-assistente h2 {
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+
+    color: #1a1a1a;
+
+    text-align: center;
+
+    padding: 22px;
+    margin: 0;
+
+    font-size: 24px;
+}
+
+/* BOTÃO FECHAR */
+
+#fechar-assistente {
+    background: #fbc02d;
+    color: #1a1a1a;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 8px 14px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* TEXTO DE APRESENTAÇÃO */
+
+#painel-assistente p {
+    padding: 12px 18px;
+    margin: 0;
+
+    background: #fffde7;
+
+    color: #333333;
+
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ÁREA DAS MENSAGENS */
+
+#mensagens-assistente {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    overflow-y: auto;
+
+    background: #fafafa;
+}
+
+/* MENSAGENS */
+
+.mensagem {
+    max-width: 85%;
+
+    padding: 12px 16px;
+
+    border-radius: 15px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+/* MENSAGEM DO ASSISTENTE */
+
+.mensagem.bot {
+    align-self: flex-start;
+
+    background: #fff3b0;
+    color: #333333;
+
+    border-bottom-left-radius: 4px;
+}
+
+/* MENSAGEM DO USUÁRIO */
+
+.mensagem.usuario {
+    align-self: flex-end;
+
+    background: #dcedc8;
+    color: #26351d;
+
+    border-bottom-right-radius: 4px;
+}
+
+/* FORMULÁRIO */
+
+#form-assistente {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #eeeeee;
+}
+
+/* CAMPO DE DIGITAÇÃO */
+
+#entrada-assistente {
+    flex: 1;
+    min-width: 0;
+
+    padding: 13px;
+
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+#entrada-assistente:focus {
+    border-color: #fbc02d;
+    box-shadow: 0 0 5px rgba(251,192,45,0.4);
+}
+
+/* BOTÃO ENVIAR */
+
+#form-assistente button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #fbc02d;
+    color: #1a1a1a;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-assistente button:hover {
+    background: #e5b832;
+}
+
+/* BARRA DE ROLAGEM */
+
+#mensagens-assistente::-webkit-scrollbar {
+    width: 7px;
+}
+
+#mensagens-assistente::-webkit-scrollbar-thumb {
+    background: #fbc02d;
+    border-radius: 10px;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    #painel-assistente {
+        width: 95%;
+        height: 600px;
+        max-height: 85vh;
+
+        margin: 20px auto;
+    }
+
+    .mensagem {
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    #form-assistente {
+        gap: 7px;
+        padding: 10px;
+    }
+
+    #form-assistente button {
+        padding: 10px 14px;
+    }
+}

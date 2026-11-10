@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato - Prevenção ao Suicídio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="interacoes.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>FALE CONOSCO</h1>
+
+        <!-- BOTÃO DE ACESSIBILIDADE -->
+        <button type="button" id="botao-fonte"
+            aria-pressed="false">
+            Ampliar texto
+        </button>
+    </header>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <ul>
+             <a href="index.html">Principal</a>
+    <a href="problema.html">Problemas</a>
+    <a href="combate.html">Combate</a>
+    <a href="impactos.html">Impactos</a>
+    <a href="contato.html">Contato</a>
+    <a href="fontes.html">Fontes</a>
+    <a href="assistente.html"> Assistente Virtual </a>
+        </ul>
+    </nav>
+
+ 
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato - Prevenção ao Suicídio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="interacoes.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <h2>Envie sua Mensagem</h2>
+
+        <p>
+            Preencha os campos abaixo para tirar dúvidas
+            ou enviar sugestões sobre nosso projeto.
+        </p>
+
+        <p>
+            Sua mensagem será anônima, a não ser que
+            você queira se identificar. Estamos aqui para ajudar.
+        </p>
+
+        <!-- FORMULÁRIO DE CONTATO -->
+        <form id="form-contato"
+            class="formulario-contato"
+            action="contato.php"
+            method="POST">
+
+            <div class="campo">
+                <label for="nome">Nome ou apelido:</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    maxlength="80"
+                    required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seuemail@exemplo.com"
+                    required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Sua mensagem:</label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    maxlength="1000"
+                    placeholder="Escreva sua mensagem"
+                    required></textarea>
+            </div>
+
+            <!-- BOTÃO DE ENVIO -->
+            <button type="submit" class="botao-enviar">
+                Enviar mensagem
+            </button>
+
+            <!-- RESULTADO DO ENVIO -->
+            <p
+                id="resultado-contato"
+                role="status"
+                aria-live="polite">
+            </p>
+
+        </form>
+
+    </main>
+
+    <!-- BOTÃO DE DADOS E ESTATÍSTICAS -->
+    <button type="button" id="abrir-dados"
+        aria-expanded="false"
+        aria-controls="painel-dados">
+
+        Dados e estatísticas
+
+    </button>
+
+    <div id="local-dados"></div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>
+            Projeto escolar sobre prevenção ao suicídio
+            e valorização da vida.
+        </p>
+    </footer>
+
+</body>
+</html>

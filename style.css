@@ -1,0 +1,1074 @@
+/* INDEX.HTML  */
+
+
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título Principal (H1) - Detalhado e com Sombra */
+h1 {
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+    color: #1c1c1c;
+    text-align: center;
+    padding: 30px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.3rem;
+    font-weight: 800;
+    border-radius: 12px;
+    margin-bottom: 25px;
+  
+}
+
+/* Menu de Navegação (<nav>) */
+nav {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    background-color: #fbc02d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Títulos Secundários (H2) */
+h2 {
+    color: #1a1a1a;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #fbc02d;
+    border-radius: 2px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 16px;
+    color: #333333;
+    font-size: 1.05rem;
+}
+
+/* Listas Gerais */
+ul {
+    list-style: none;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+/* Links das outras páginas */
+ul li a {
+    display: block;
+    background-color: #fafafa;
+    color: #2c2c2c;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #ececec;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+ul li a:hover {
+    background-color: #fffde7;
+    border-color: #fff59d;
+    color: #000000;
+    transform: translateX(5px);
+}
+
+/* Estilização para os Integrantes da Equipe */
+ul li:not(:has(a)) {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    color: #1a1a1a;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #fffde7;
+    text-align: center;
+    border-top: 2px solid #fbc02d;
+    border-radius: 10px;
+}
+
+footer p {
+    color: #555555;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* PROBLEMAS.HTML:  */
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título Principal (H1) - Amarelo detalhado com Sombra */
+h1 {
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+    color: #1c1c1c;
+    text-align: center;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+    font-weight: 800;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 18px rgba(251, 192, 45, 0.25);
+}
+
+/* Menu de Navegação (<nav> e <ul>) */
+nav {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo aplicado diretamente nas tags <a> da nav */
+nav ul a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+nav ul a:hover {
+    background-color: #fbc02d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Títulos Secundários (H2) */
+h2 {
+    color: #1a1a1a;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #fbc02d;
+    border-radius: 2px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 16px;
+    color: #333333;
+    font-size: 1.05rem;
+}
+
+/* Cartões de lista do conteúdo */
+.cards-lista {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.cards-lista li {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    color: #222222;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    line-height: 1.6;
+}
+
+.cards-lista li strong {
+    color: #d84315;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    padding: 22px;
+    background-color: #fffde7;
+    text-align: center;
+    border-top: 2px solid #fbc02d;
+    border-radius: 10px;
+}
+
+footer p {
+    color: #555555;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* COMBATE.HTML  */
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título Principal (H1) - Amarelo detalhado com Sombra */
+h1 {
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+    color: #1c1c1c;
+    text-align: center;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+    font-weight: 800;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 18px rgba(251, 192, 45, 0.25);
+}
+
+/* Menu de Navegação (<nav> e <ul>) */
+nav {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+nav ul a:hover {
+    background-color: #fbc02d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Títulos Secundários (H2) */
+h2 {
+    color: #1a1a1a;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #fbc02d;
+    border-radius: 2px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 16px;
+    color: #333333;
+    font-size: 1.05rem;
+}
+
+/* Bloco de destaque (para Onde Buscar Apoio) */
+.destaque-box {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-left: 5px solid #fbc02d;
+    padding: 18px 22px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.destaque-box p {
+    margin-bottom: 10px;
+}
+
+.destaque-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Cartões de lista para tópicos */
+.cards-lista {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.cards-lista li {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    color: #222222;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    line-height: 1.6;
+}
+
+.cards-lista li strong {
+    color: #d84315;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    padding: 22px;
+    background-color: #fffde7;
+    text-align: center;
+    border-top: 2px solid #fbc02d;
+    border-radius: 10px;
+}
+
+footer p {
+    color: #555555;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+/* IMPACTOS.HTML  */
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título Principal (H1) - Amarelo detalhado com Sombra */
+h1 {
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+    color: #1c1c1c;
+    text-align: center;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+    font-weight: 800;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 18px rgba(251, 192, 45, 0.25);
+}
+
+/* Menu de Navegação (<nav> e <ul>) */
+nav {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+nav ul a:hover {
+    background-color: #fbc02d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Títulos Secundários (H2) */
+h2 {
+    color: #1a1a1a;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #fbc02d;
+    border-radius: 2px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 16px;
+    color: #333333;
+    font-size: 1.05rem;
+}
+
+/* Bloco de destaque para dados e informações */
+.destaque-box {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-left: 5px solid #fbc02d;
+    padding: 18px 22px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.destaque-box p {
+    margin-bottom: 12px;
+}
+
+.destaque-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    padding: 22px;
+    background-color: #fffde7;
+    text-align: center;
+    border-top: 2px solid #fbc02d;
+    border-radius: 10px;
+}
+
+footer p {
+    color: #555555;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+
+
+/* CONTATO.HTML  */
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título Principal (H1) - Amarelo detalhado com Sombra */
+h1 {
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+    color: #1c1c1c;
+    text-align: center;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+    font-weight: 800;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 18px rgba(251, 192, 45, 0.25);
+}
+
+/* Menu de Navegação (<nav> e <ul>) */
+nav {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+nav ul a:hover {
+    background-color: #fbc02d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Títulos Secundários (H2) */
+h2 {
+    color: #1a1a1a;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #fbc02d;
+    border-radius: 2px;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 16px;
+    color: #333333;
+    font-size: 1.05rem;
+}
+
+/* ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
+.formulario-contato {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.campo input,
+.campo textarea {
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    outline: none;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #fbc02d;
+    box-shadow: 0 0 0 3px rgba(251, 192, 45, 0.25);
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botão de Enviar */
+.botao-enviar {
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+    color: #1c1c1c;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(251, 192, 45, 0.3);
+    width: 100%;
+}
+
+.botao-enviar:hover {
+    background: #fbc02d;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(251, 192, 45, 0.4);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    padding: 22px;
+    background-color: #fffde7;
+    text-align: center;
+    border-top: 2px solid #fbc02d;
+    border-radius: 10px;
+}
+
+footer p {
+    color: #555555;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* ACESSIBILIDADE: AUMENTAR O TEXTO */
+body.fonte-ampliada {
+    font-size: 1.2rem;
+}
+
+/* MANTÉM OS CAMPOS E BOTÕES RESPONSIVOS */
+input,
+textarea,
+button {
+    font-family: inherit;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* DESTAQUE AO NAVEGAR PELO TECLADO */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+    outline: 3px solid #174a7e;
+    outline-offset: 3px;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .formulario-contato {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        padding: 20px 12px;
+    }
+
+    nav ul a {
+        padding: 10px;
+    }
+}
+
+/* DADOS.HTML */
+#abrir-dados {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    z-index: 1000;
+    background: #fbc02d;
+    color: #1a1a1a;
+    border: 1px solid #d9a514;
+    border-radius: 10px 0 0 10px;
+    padding: 14px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+#painel-dados {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    width: min(360px, 90vw);
+    height: 100vh;
+    overflow-y: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    background: #fffde7;
+    border-left: 3px solid #fbc02d;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#painel-dados[hidden] {
+    display: none;
+}
+
+#painel-dados article {
+    background: white;
+    border: 1px solid #fff59d;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 20px 0;
+}
+
+#painel-dados h2,
+#painel-dados h3 {
+    margin: 12px 0;
+}
+
+#painel-dados a {
+    color: #174a7e;
+    font-weight: bold;
+}
+
+#fechar-dados {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    background: #fbc02d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#abrir-dados:focus-visible,
+#fechar-dados:focus-visible {
+    outline: 3px solid #174a7e;
+    outline-offset: 3px;
+}
+
+/* FORMULARIOFIC.HTML */
+/* ABA DO RELATO: MAIS ACIMA NA LATERAL */
+#abrir-relato {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    z-index: 9998;
+    writing-mode: vertical-rl;
+    background: #fbc02d;
+    color: #1a1a1a;
+    border: 2px solid #d9a514;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    padding: 14px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 12px #0003;
+}
+
+/* PAINEL DO RELATO */
+#painel-relato {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    width: min(400px, 90vw);
+    height: 100vh;
+    overflow-y: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    background: #fffde7;
+    border-left: 4px solid #fbc02d;
+    box-shadow: -5px 0 20px #0003;
+}
+
+#painel-relato[hidden] {
+    display: none;
+}
+
+#fechar-relato {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    background: #fbc02d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#abrir-relato {
+    position: fixed;
+    top: 22%;
+    right: 0;
+    z-index: 9999;
+    background: #fbc02d;
+    color: #1a1a1a;
+    border: 2px solid #d9a514;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    padding: 14px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    box-shadow: 0 3px 12px #0003;
+}
+
+#painel-relato {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    width: min(400px, 90vw);
+    height: 100vh;
+    overflow-y: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    background: #fffde7;
+    border-left: 4px solid #fbc02d;
+    box-shadow: -5px 0 20px #0003;
+}
+
+#painel-relato[hidden] {
+    display: none;
+}
+
+#painel-relato label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#painel-relato input,
+#painel-relato select,
+#painel-relato textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 6px 0 12px;
+    font: inherit;
+}
+
+#fechar-relato {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    background: #fbc02d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+/* FONTES.HTML */
+
+/* Cartões das fontes de pesquisa */
+.cards-lista {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.cards-lista li {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-left: 5px solid #fbc02d;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s ease;
+}
+
+.cards-lista li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cards-lista li strong {
+    display: block;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.cards-lista li p {
+    color: #444444;
+    margin-bottom: 14px;
+}
+
+/* Links dentro dos cartões */
+.cards-lista li a {
+    display: inline-block;
+    background: linear-gradient(135deg, #fff176, #fbc02d);
+    color: #1c1c1c;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 7px;
+    transition: all 0.25s ease;
+}
+
+.cards-lista li a:hover {
+    background: #fbc02d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .cards-lista li {
+        padding: 16px;
+    }
+
+    .cards-lista li a {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
